@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db_dev:
+    image: postgres:9.5-alpine
+    ports:
+      - '15432:5432'
+    environment:
+      POSTGRES_USER: assistant_coach_dev
+      POSTGRES_PASSWORD: assistant_coach_dev
+
+

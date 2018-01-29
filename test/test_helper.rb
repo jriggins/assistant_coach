@@ -4,7 +4,7 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
 # Test Helper
-class ActiveSupport
+module ActiveSupport
   # Testcase
   class TestCase
     # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
