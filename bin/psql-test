@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker-compose exec db psql assistant_coach_test pg

@@ -24,3 +24,5 @@
 
 /vendor/*
 !/vendor/cache
+
+.idea/
