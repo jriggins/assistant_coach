@@ -1,7 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: League One
+  first_name: MyString
+  last_name: MyString
 
 two:
-  name: League Two
+  first_name: MyString
+  last_name: MyString

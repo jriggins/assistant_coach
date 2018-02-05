@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team: one
+  first_name: Coach
+  last_name: One
+  role: 1
+
+two:
+  team: two
+  first_name: Coach
+  last_name: Two
+  role: 1

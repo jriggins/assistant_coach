@@ -1,0 +1,14 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team: one
+  first_name: Player
+  last_name: One
+  age: 10
+
+two:
+  team: one
+  first_name: Player
+  last_name: Two
+  age: 11
+
