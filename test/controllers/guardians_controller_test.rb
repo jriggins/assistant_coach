@@ -1,4 +1,6 @@
-require 'test_helper'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class GuardiansControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -16,7 +18,7 @@ class GuardiansControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create guardian" do
-    assert_difference('Guardian.count') do
+    assert_difference("Guardian.count") do
       post guardians_url, params: { guardian: { first_name: @guardian.first_name, last_name: @guardian.last_name } }
     end
 
@@ -39,7 +41,7 @@ class GuardiansControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy guardian" do
-    assert_difference('Guardian.count', -1) do
+    assert_difference("Guardian.count", -1) do
       delete guardian_url(@guardian)
     end
 

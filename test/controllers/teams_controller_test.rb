@@ -1,4 +1,6 @@
-require 'test_helper'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class TeamsControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -16,7 +18,7 @@ class TeamsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create team" do
-    assert_difference('Team.count') do
+    assert_difference("Team.count") do
       post teams_url, params: { team: { league_id: @team.league_id, name: @team.name } }
     end
 
@@ -39,7 +41,7 @@ class TeamsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy team" do
-    assert_difference('Team.count', -1) do
+    assert_difference("Team.count", -1) do
       delete team_url(@team)
     end
 

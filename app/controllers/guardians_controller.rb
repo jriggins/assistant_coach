@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class GuardiansController < ApplicationController
   before_action :set_guardian, only: [:show, :edit, :update, :destroy]
 
@@ -28,7 +30,7 @@ class GuardiansController < ApplicationController
 
     respond_to do |format|
       if @guardian.save
-        format.html { redirect_to @guardian, notice: 'Guardian was successfully created.' }
+        format.html { redirect_to @guardian, notice: "Guardian was successfully created." }
         format.json { render :show, status: :created, location: @guardian }
       else
         format.html { render :new }
@@ -42,7 +44,7 @@ class GuardiansController < ApplicationController
   def update
     respond_to do |format|
       if @guardian.update(guardian_params)
-        format.html { redirect_to @guardian, notice: 'Guardian was successfully updated.' }
+        format.html { redirect_to @guardian, notice: "Guardian was successfully updated." }
         format.json { render :show, status: :ok, location: @guardian }
       else
         format.html { render :edit }
@@ -56,7 +58,7 @@ class GuardiansController < ApplicationController
   def destroy
     @guardian.destroy
     respond_to do |format|
-      format.html { redirect_to guardians_url, notice: 'Guardian was successfully destroyed.' }
+      format.html { redirect_to guardians_url, notice: "Guardian was successfully destroyed." }
       format.json { head :no_content }
     end
   end

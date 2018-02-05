@@ -1,4 +1,6 @@
-require 'test_helper'
+# frozen_string_literal: true
+
+require "test_helper"
 
 class PlayersControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -16,7 +18,7 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create player" do
-    assert_difference('Player.count') do
+    assert_difference("Player.count") do
       post players_url, params: { player: { age: @player.age, first_name: @player.first_name, last_name: @player.last_name, team_id: @player.team_id } }
     end
 
@@ -39,7 +41,7 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy player" do
-    assert_difference('Player.count', -1) do
+    assert_difference("Player.count", -1) do
       delete player_url(@player)
     end
 
