@@ -1,0 +1,20 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contents: Comment One
+
+one_one:
+  contents: "Comment One: Child One"
+  parent: one
+
+two:
+  contents: MyText
+
+one_two:
+  contents: "Comment One: Child Two"
+  parent: one
+
+one_two_one:
+  contents: "Comment One: Child Two: Child One"
+  parent: one_two
+
